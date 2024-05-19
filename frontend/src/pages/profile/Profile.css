@@ -1,0 +1,112 @@
+.section-pro {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.605);
+}
+.pro-IMG {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover entire viewport */
+  z-index: -1; /* Ensure the image is behind other content */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+}
+
+h2,
+h3 {
+  color: #ffffff;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1px; /* Increased gap between elements */
+}
+
+.card2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-photo img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 1px;
+  margin-left: 10px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap; /* Allow elements to wrap to the next line */
+  gap: 0px; /* Gap between form elements */
+  width: 100%;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+form p {
+  margin: 0;
+  flex: 1 1 calc(50% - 10px); /* Adjust the width of form elements */
+}
+
+label {
+  color: #fff; /* White font color */
+}
+
+input,
+textarea {
+  width: 400px; /* Make inputs and textarea take full width */
+  padding: 10px;
+  border: 1px solid #aaa; /* Light gray border */
+  border-radius: 5px;
+  background: #222;
+  color: #fff; /* White font color */
+}
+
+input:disabled {
+  background: #444;
+}
+
+.--btn {
+  background: #007bff; /* Blue background color for buttons */
+  color: #fff; /* White font color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.--btn-primary {
+  background: #0056b3; /* Darker blue for primary button */
+}
+
+.--btn-block {
+  width: 100%;
+}
+
+.--color-white {
+  color: #fff; /* White font color */
+}
+
+.card2 {
+  background-color: #1e1e1e;
+  border-radius: 10%;
+  margin: 0 auto; /* Center horizontally */
+}

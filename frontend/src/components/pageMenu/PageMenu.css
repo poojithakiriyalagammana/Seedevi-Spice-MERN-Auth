@@ -1,0 +1,33 @@
+.home-linkss {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.home-linkss li {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.home-linkss li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.home-linkss li a:hover {
+  color: #007bff;
+}
+
+@media screen and (max-width: 600px) {
+  .home-linkss {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-linkss li {
+    margin: 10px 0;
+  }
+}

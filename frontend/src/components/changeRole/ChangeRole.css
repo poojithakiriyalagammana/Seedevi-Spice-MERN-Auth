@@ -1,0 +1,33 @@
+/* ChangeRole.css */
+
+.sort {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.sort form {
+  display: flex;
+  align-items: center;
+}
+
+.sort select {
+  padding: px; /* Reduce padding */
+  font-size: 14px; /* Reduce font size */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.sort button {
+  padding: 0% 0%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sort button:hover {
+  background-color: #0056b3;
+}

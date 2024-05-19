@@ -1,0 +1,136 @@
+/* Header.css */
+
+.header {
+  background-color: #130000;
+  padding: 0.5rem 3rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  max-width: 100px;
+  cursor: pointer;
+}
+
+.middle-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* Increase gap for larger spacing */
+  font-size: 24px; /* Increase font size */
+  flex-grow: 1; /* Allow the middle-links to grow */
+  justify-content: center; /* Center the middle-links */
+}
+
+.middle-links a,
+.home-links a,
+.home-links button {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem; /* Increase padding for larger clickable area */
+  transition: background-color 0.3s ease;
+}
+
+.middle-links a:hover,
+.home-links a:hover,
+.home-links button:hover {
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.home-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.home-links a,
+.home-links button {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.home-links a:hover,
+.home-links button:hover {
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.--flex-center {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.--btn {
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.--btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.--btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.--btn-secondary {
+  background-color: #dc3545;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.--btn-secondary:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+  .middle-links {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  nav .home-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    background-color: #130000;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+
+  .home-links.show {
+    display: flex;
+  }
+
+  .home-links li {
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #333;
+  }
+
+  .home-links li:last-child {
+    border-bottom: none;
+  }
+}
